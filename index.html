@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="mondrian">
+          <div class="mondrian__block" v-for="block in blocks" :data-row-span="block.rowSpan" :data-col-span="block.colSpan" :data-color-index="block.colorIndex"></div>
+      </div>
+      
+      <button class="generate-button" v-on:click="regenerate">Regenerate</button>
+    </div>
+  </body>
+</html>
